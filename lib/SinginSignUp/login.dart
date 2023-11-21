@@ -13,7 +13,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Color(0xff1ba0e2),
       body: SafeArea(
           bottom: false,
           child: ListView(
@@ -24,7 +24,7 @@ class _LoginState extends State<Login> {
               SizedBox(height: 55,),
               Container(
                 height: 60,
-                width: MediaQuery.of(context).size.width - 2 * 20,
+                width: MediaQuery.of(context).size.width - 200,
                 child: ElevatedButton(
                     onPressed: (){
                       showModalBottomSheet(
@@ -53,9 +53,9 @@ class _LoginState extends State<Login> {
                     },
                     child: Text("Sign In",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueAccent,
+                      primary: Color(0xff08457e),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(40),
                         )
                     ),
                 ),
@@ -63,7 +63,7 @@ class _LoginState extends State<Login> {
               SizedBox(height: 15,),
               Container(
                 height: 60,
-                width: MediaQuery.of(context).size.width - 2 * 24,
+                width: MediaQuery.of(context).size.width - 200,
                 child: ElevatedButton(
                   onPressed: (){
                     showModalBottomSheet(
@@ -92,9 +92,9 @@ class _LoginState extends State<Login> {
                   },
                   child: Text("Sign Up",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.blueAccent,
+                      primary: Color(0xff08457e),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(40),
                       )
                   ),
                 ),

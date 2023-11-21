@@ -22,7 +22,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Color(0xff1ba0e2),
       appBar: AppBar(
         title: Text("Edit Prifile".toUpperCase(),style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold,),),
         centerTitle: true,
@@ -67,7 +67,7 @@ class _ProfileState extends State<Profile> {
                       );
                       await _dbUser.updateUser(user);
                       Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) => AboutUs(user: user)));
+                          MaterialPageRoute(builder: (context) => AboutUs()));
                     }
                   },
                   child:Container(
